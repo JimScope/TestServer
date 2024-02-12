@@ -28,7 +28,7 @@ def change_color(color, data):
 
 def reset_color(background_color):
     time.sleep(5)  # Sleep for 5 seconds before resetting the color
-    change_color(background_color)
+    change_color(background_color, {})
 
 
 @app.get("/")
