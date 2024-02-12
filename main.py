@@ -11,6 +11,7 @@ async def root():
 @app.post("/test_endpoint")
 async def test_endpoint(data: dict):
     try:
+        print(data)
         return {"message": data}
 
     except Exception as e:
